@@ -68,8 +68,8 @@ master_doc = "index"
 
 # General information about the project.
 project = "label-free"
-copyright = "2022, Jackson Maxfield Brown"
-author = "Jackson Maxfield Brown"
+copyright = "2022, Gregory Johnson and Eva Maxfield Brown"
+author = "Gregory Johnson and Eva Maxfield Brown"
 
 # The version info for the project you"re documenting, acts as replacement
 # for |version| and |release|, also used in various other places throughout
@@ -149,7 +149,7 @@ latex_documents = [
         master_doc,
         "label_free.tex",
         "label-free Documentation",
-        "Jackson Maxfield Brown",
+        "Eva Maxfield Brown",
         "manual",
     ),
 ]
@@ -174,6 +174,6 @@ texinfo_documents = [
         "label-free Documentation",
         author,
         "label_free",
-        "Dataset utilities and processing functions generalized to all CDP instances.",
+        "TODO: short description",
     ),
 ]
