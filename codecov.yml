@@ -1,0 +1,2 @@
+ignore:
+  - "label_free/bin/.*"
