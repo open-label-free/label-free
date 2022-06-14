@@ -1,0 +1,19 @@
+label\_free package
+===================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   label_free.bin
+   label_free.utils
+
+Module contents
+---------------
+
+.. automodule:: label_free
+   :members:
+   :undoc-members:
+   :show-inheritance:
