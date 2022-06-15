@@ -35,13 +35,21 @@ dev_requirements = [
     "coverage>=5.1",
     "jupyterlab>=3.2.8",
     "m2r2>=0.2.7",
+    "napari[qt]>=0.4.16",
     "Sphinx>=3.4.3",
     "furo>=2022.4.7",
     "twine>=3.1.1",
     "wheel>=0.34.2",
 ]
 
-requirements = []
+requirements = [
+    "aicsimageio~=4.8",
+    "dataclasses-json~=0.5",
+    "numpy~=1.0",
+    "pandas~=1.4",
+    "scikit-image~=0.19",
+    "torch~=1.11",
+]
 
 extra_requirements = {
     "setup": setup_requirements,
@@ -67,9 +75,7 @@ setup(
         "Programming Language :: Python :: 3.9",
         "Programming Language :: Python :: 3.10",
     ],
-    description=(
-        "TODO"
-    ),
+    description=("TODO"),
     entry_points={
         "console_scripts": [
             (),
