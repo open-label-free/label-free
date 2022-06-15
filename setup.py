@@ -25,6 +25,7 @@ test_requirements = [
     "pytest>=5.4.3",
     "pytest-cov>=2.9.0",
     "pytest-raises>=0.11",
+    "s3fs>=2022.5.0",
     "tox>=3.15.2",
 ]
 
