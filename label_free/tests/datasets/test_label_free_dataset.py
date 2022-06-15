@@ -51,4 +51,3 @@ def test_dataset(data_dir: Path) -> None:
         # Update last to current
         last_signal_patch = current_signal_patch
         last_target_patch = current_target_patch
-        print("Completed iter")
