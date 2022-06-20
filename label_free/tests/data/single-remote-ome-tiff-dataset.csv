@@ -1,0 +1,2 @@
+signal_image_uri,signal_image_channel,target_image_uri,target_image_channel
+s3://aics-modeling-packages-test-resources/aicsimageio/test_resources/resources/pipeline-4.ome.tiff,Bright_2,s3://aics-modeling-packages-test-resources/aicsimageio/test_resources/resources/pipeline-4.ome.tiff,H3342
