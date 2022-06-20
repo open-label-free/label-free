@@ -50,6 +50,7 @@ requirements = [
     "pandas~=1.4",
     "scikit-image~=0.19",
     "torch~=1.11",
+    "pytorch-lightning~=1.6.4",
 ]
 
 extra_requirements = {
