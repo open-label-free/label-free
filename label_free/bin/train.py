@@ -12,30 +12,37 @@ def train(experiment_config: ExperimentConfig):
     # Load datasets
     # #############
 
-    experiment_config["kwargs"]["dataloader_train"] = load_object(
-        **experiment_config["dataloader_train"]
+    train_dataset = load_object(
+        **experiment_config["train_dataset"]
     )
-    experiment_config["kwargs"]["dataloader_validation"] = load_object(
-        **experiment_config["dataloader_validation"]
+    val_dataset = load_object(
+        **experiment_config["val_dataset"]
     )
 
-    if "dataset_test" in experiment_config:
+    if "test_dataset" in experiment_config:
 
-        experiment_config["kwargs"]["dataloader_test"] = load_object(
-            **experiment_config["dataloader_test"]
+        test_dataset = load_object(
+            **experiment_config["test_dataset"]
         )
 
     # ##########
     # Load model
     # ##########
 
-    model = load_object(**experiment_config.model)
-    experiment_config["kwargs"]["model"] = model
+    model = load_object(**experiment_config["model"])
+    
 
     # ###############
     # Load experiment
     # ###############
 
+    experiment_config["kwargs"]["train_dataset"] = model
+    experiment_config["kwargs"]["val_dataset"] = model
+    experiment_config["kwargs"]["test_dataset"] = model
+
+    experiment_config["kwargs"]["model"] = model
+
     experiment = load_object(**experiment_config)
 
     experiment.train()
+    experiment.test()
