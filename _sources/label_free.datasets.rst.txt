@@ -1,0 +1,21 @@
+label\_free.datasets package
+============================
+
+Submodules
+----------
+
+label\_free.datasets.label\_free\_dataset module
+------------------------------------------------
+
+.. automodule:: label_free.datasets.label_free_dataset
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: label_free.datasets
+   :members:
+   :undoc-members:
+   :show-inheritance:

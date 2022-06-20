@@ -8,7 +8,19 @@ Subpackages
    :maxdepth: 4
 
    label_free.bin
+   label_free.datasets
    label_free.utils
+
+Submodules
+----------
+
+label\_free.types module
+------------------------
+
+.. automodule:: label_free.types
+   :members:
+   :undoc-members:
+   :show-inheritance:
 
 Module contents
 ---------------

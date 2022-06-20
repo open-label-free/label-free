@@ -3,10 +3,10 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
-<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="label_free.datasets package" href="label_free.datasets.html" /><link rel="prev" title="label_free package" href="label_free.html" />
+<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="label_free.utils package" href="label_free.utils.html" /><link rel="prev" title="label_free.bin package" href="label_free.bin.html" />
 
     <meta name="generator" content="sphinx-5.0.2, furo 2022.06.04.1"/>
-        <title>label_free.bin package - label-free 0.0.0 documentation</title>
+        <title>label_free.datasets package - label-free 0.0.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=40978830699223671f4072448e654b5958f38b89" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
@@ -160,8 +160,8 @@
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
 <li class="toctree-l1 current has-children"><a class="reference internal" href="modules.html">Package modules</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
 <li class="toctree-l2 current has-children"><a class="reference internal" href="label_free.html">label_free package</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
-<li class="toctree-l3 current current-page"><a class="current reference internal" href="#">label_free.bin package</a></li>
-<li class="toctree-l3"><a class="reference internal" href="label_free.datasets.html">label_free.datasets package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="label_free.bin.html">label_free.bin package</a></li>
+<li class="toctree-l3 current current-page"><a class="current reference internal" href="#">label_free.datasets package</a></li>
 <li class="toctree-l3"><a class="reference internal" href="label_free.utils.html">label_free.utils package</a></li>
 </ul>
 </li>
@@ -201,11 +201,72 @@
           </label>
         </div>
         <article role="main">
-          <section id="label-free-bin-package">
-<h1>label_free.bin package<a class="headerlink" href="#label-free-bin-package" title="Permalink to this heading">#</a></h1>
-<section id="module-label_free.bin">
-<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-label_free.bin" title="Permalink to this heading">#</a></h2>
-<p>Bin scripts package for label_free.</p>
+          <section id="label-free-datasets-package">
+<h1>label_free.datasets package<a class="headerlink" href="#label-free-datasets-package" title="Permalink to this heading">#</a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading">#</a></h2>
+</section>
+<section id="module-label_free.datasets.label_free_dataset">
+<span id="label-free-datasets-label-free-dataset-module"></span><h2>label_free.datasets.label_free_dataset module<a class="headerlink" href="#module-label_free.datasets.label_free_dataset" title="Permalink to this heading">#</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="label_free.datasets.label_free_dataset.LabelFreeDataset">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">label_free.datasets.label_free_dataset.</span></span><span class="sig-name descname"><span class="pre">LabelFreeDataset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">base_dataset</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">DataFrame</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">normalization_config</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="label_free.html#label_free.types.NormalizationConfig" title="label_free.types.NormalizationConfig"><span class="pre">NormalizationConfig</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">downsample_dims</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="label_free.html#label_free.types.Dimensions" title="label_free.types.Dimensions"><span class="pre">Dimensions</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">Dimensions(Z=32,</span> <span class="pre">Y=128,</span> <span class="pre">X=128)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">patch_dims</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="label_free.html#label_free.types.Dimensions" title="label_free.types.Dimensions"><span class="pre">Dimensions</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">Dimensions(Z=16,</span> <span class="pre">Y=64,</span> <span class="pre">X=64)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">patches_per_image</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1000</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">image_reading_kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/label_free/datasets/label_free_dataset.html#LabelFreeDataset"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#label_free.datasets.label_free_dataset.LabelFreeDataset" title="Permalink to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Dataset</span></code></p>
+<p>A basic dataset for Label Free training. This object can handle local or remote
+files. Loads the images provided with AICSImageIO. Loads, normalization, and
+downsampling are only done on a cache miss (cached on the combination of image
+URI and requested channel).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>base_dataset</strong> (<em>Union[str, pd.DataFrame]</em>) – The base dataset to build off of. Provide either a string path to a CSV file or
+provide a loaded pandas DataFrame. The DataFrame should have the columns:
+‘signal_image_uri’, ‘signal_image_channel’, ‘target_image_uri’,
+and ‘target_image_channel’</p></li>
+<li><p><strong>normalization_config</strong> (<em>Optional[NormalizationConfig]</em>) – Optional normalization parameters.
+Default: None (normalize each requested image channel independently)</p></li>
+<li><p><strong>downsample_dims</strong> (<em>Dimensions</em>) – The size to downsample the selected Z stack to.
+Default: Z: 32, Y: 128, X: 128</p></li>
+<li><p><strong>patch_dims</strong> (<em>Dimensions</em>) – The size of the patches.
+Default: Z: 16, Y: 64, X: 64</p></li>
+<li><p><strong>patches_per_image</strong> (<em>int</em>) – The number of patches to create for each image.
+Default: 1000</p></li>
+<li><p><strong>image_reading_kwargs</strong> (<em>Dict[str, Any]</em>) – Any extra keyword arguments to pass to the AICSImageIO constructor.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="label_free.datasets.label_free_dataset.LabelFreeDatasetColumns">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">label_free.datasets.label_free_dataset.</span></span><span class="sig-name descname"><span class="pre">LabelFreeDatasetColumns</span></span><a class="reference internal" href="_modules/label_free/datasets/label_free_dataset.html#LabelFreeDatasetColumns"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#label_free.datasets.label_free_dataset.LabelFreeDatasetColumns" title="Permalink to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="label_free.datasets.label_free_dataset.LabelFreeDatasetColumns.signal_image_channel">
+<span class="sig-name descname"><span class="pre">signal_image_channel</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'signal_image_channel'</span></em><a class="headerlink" href="#label_free.datasets.label_free_dataset.LabelFreeDatasetColumns.signal_image_channel" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="label_free.datasets.label_free_dataset.LabelFreeDatasetColumns.signal_image_uri">
+<span class="sig-name descname"><span class="pre">signal_image_uri</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'signal_image_uri'</span></em><a class="headerlink" href="#label_free.datasets.label_free_dataset.LabelFreeDatasetColumns.signal_image_uri" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="label_free.datasets.label_free_dataset.LabelFreeDatasetColumns.target_image_channel">
+<span class="sig-name descname"><span class="pre">target_image_channel</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'target_image_channel'</span></em><a class="headerlink" href="#label_free.datasets.label_free_dataset.LabelFreeDatasetColumns.target_image_channel" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="label_free.datasets.label_free_dataset.LabelFreeDatasetColumns.target_image_uri">
+<span class="sig-name descname"><span class="pre">target_image_uri</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'target_image_uri'</span></em><a class="headerlink" href="#label_free.datasets.label_free_dataset.LabelFreeDatasetColumns.target_image_uri" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-label_free.datasets">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-label_free.datasets" title="Permalink to this heading">#</a></h2>
+<p>Datasets test package for label_free.</p>
 </section>
 </section>
 
@@ -214,23 +275,23 @@
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="label_free.datasets.html">
+          <a class="next-page" href="label_free.utils.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">label_free.datasets package</div>
+                <div class="title">label_free.utils package</div>
               </div>
               <svg><use href="#svg-arrow-right"></use></svg>
             </a>
-          <a class="prev-page" href="label_free.html">
+          <a class="prev-page" href="label_free.bin.html">
               <svg><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
                 <div class="context">
                   <span>Previous</span>
                 </div>
                 
-                <div class="title">label_free package</div>
+                <div class="title">label_free.bin package</div>
                 
               </div>
             </a>
@@ -266,8 +327,10 @@
         <div class="toc-tree-container">
           <div class="toc-tree">
             <ul>
-<li><a class="reference internal" href="#">label_free.bin package</a><ul>
-<li><a class="reference internal" href="#module-label_free.bin">Module contents</a></li>
+<li><a class="reference internal" href="#">label_free.datasets package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-label_free.datasets.label_free_dataset">label_free.datasets.label_free_dataset module</a></li>
+<li><a class="reference internal" href="#module-label_free.datasets">Module contents</a></li>
 </ul>
 </li>
 </ul>
